@@ -55,14 +55,14 @@ export const metadata = {
     locale: 'en_NG',
     images: [
       {
-        url: '/assets/logo.png',
+        url: '/assets/logo-icon.png',
         width: 1200,
         height: 630,
         alt: 'Party Deal Catering - Premium Nigerian catering services with beautifully presented dishes',
         type: 'image/jpeg'
       },
       {
-        url: '/assets/logo.png',
+        url: '/assets/logo-icon.png',
         width: 1080,
         height: 1080,
         alt: 'Party Deal Catering - Elegant food presentation and professional service',
@@ -88,7 +88,7 @@ export const metadata = {
     creator: '@partydealcatering',
     images: [
       {
-        url: '/assets/logo.png',
+        url: '/assets/logo-icon.png',
         width: 1200,
         height: 600,
         alt: 'Party Deal Catering - Premium Nigerian catering services'
@@ -104,7 +104,7 @@ export const metadata = {
   
   // WhatsApp sharing
   whatsapp: {
-    image: '/assets/logo.png'
+    image: '/assets/logo-icon.png'
   },
   
   // Robots and indexing
@@ -230,8 +230,8 @@ export default function RootLayout({ children }) {
               "name": "Party Deal Catering",
               "description": "Nigeria's Premier Catering Company serving Lagos, Abuja and nationwide",
               "url": "https://partydeal-live.vercel.app",
-              "logo": "https://partydeal-live.vercel.app/assets/logo.png",
-              "image": "https://partydeal-live.vercel.app/assets/logo.png",
+              "logo": "https://partydeal-live.vercel.app/assets/logo-icon.png",
+              "image": "https://partydeal-live.vercel.app/assets/logo-icon.png",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Lagos",
@@ -346,7 +346,7 @@ export default function RootLayout({ children }) {
               "name": "Party Deal Catering",
               "alternateName": "Party Deal",
               "url": "https://partydealcatering.com",
-              "logo": "https://partydealcatering.com/assets/logo.png",
+              "logo": "https://partydealcatering.com/assets/logo-icon.png",
               "foundingDate": "2020",
               "founder": "Party Deal Team",
               "address": {
