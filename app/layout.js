@@ -6,7 +6,7 @@ import Loader from '@/components/Loader'; // ✅ Add this
 export const metadata = {
   title: "Party Deal - Mouth watering food",
   description:
-    "Nigeria\'s #1 premium catering company serving Lagos, Abuja & nationwide. Expert event catering, corporate meals, wedding catering, birthday parties & special occasions. Book now for unforgettable culinary experiences.",
+    "Nigeria\'s #1 premium catering company serving Lagos, Abuja & nationwide.",
   authors: [{ name: "Hokage Creative Labs" }],
   keywords: [
     'catering company Nigeria',
@@ -28,12 +28,13 @@ export const metadata = {
     'small chops catering',
     'jollof rice catering',
     'pepper soup catering',
-    'suya catering Lagos'
+    'suya catering Lagos',
+    ' Expert event catering, corporate meals, wedding catering, birthday parties & special occasions. Book now for unforgettable culinary experiences.'
   ],
   openGraph: {
     title: "Party Deal - Mouth watering food",
     description:
-      "Nigeria\'s #1 premium catering company serving Lagos, Abuja & nationwide. Expert event catering, corporate meals, wedding catering, birthday parties & special occasions. Book now for unforgettable culinary experiences.",
+      "Nigeria\'s #1 premium catering company serving Lagos, Abuja & nationwide.",
     url: "https://partydeal-live.vercel.app",
     siteName: "Mfon Usoro Books",
     images: [
