@@ -32,30 +32,29 @@ const FAQSection = () => {
     <section className="bg-gray-50 py-20 w-full">
       <div className="max-w-4xl mx-auto px-5">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-gray-900 mb-4">
             Frequently Asked Questions
           </h2>
         </div>
 
-        <div className="space-y-4">
+        <div className="divide-y divide-gray-200">
           {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden transition-all duration-300"
-            >
+            <div key={index} className="py-6">
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full px-6 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                className="w-full text-left flex items-center justify-between group"
               >
-                <span className="text-lg font-medium text-gray-900 pr-4">
+                <span className="text-[24px] font-medium text-black pr-4">
                   {faq.question}
                 </span>
                 <div className="flex-shrink-0 ml-4">
-                  {openIndex === index ? (
-                    <Minus className="w-6 h-6 text-gray-600" />
-                  ) : (
-                    <Plus className="w-6 h-6 text-gray-600" />
-                  )}
+                  <div className="w-8 h-8 rounded-full border-2 border-gray-300 flex items-center justify-center group-hover:border-gray-400 transition-colors duration-200">
+                    {openIndex === index ? (
+                      <Minus className="w-4 h-4 text-gray-600" />
+                    ) : (
+                      <Plus className="w-4 h-4 text-gray-600" />
+                    )}
+                  </div>
                 </div>
               </button>
               
@@ -64,8 +63,8 @@ const FAQSection = () => {
                   openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                 }`}
               >
-                <div className="px-6 pb-6">
-                  <p className="text-gray-700 leading-relaxed">
+                <div className="pt-4 pr-12">
+                  <p className="text-black font-medium leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>
@@ -78,7 +77,7 @@ const FAQSection = () => {
           <p className="text-gray-600 mb-6">
             Still have questions? We'd love to help!
           </p>
-          <button className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-8 py-3 rounded-lg transition-colors duration-200">
+          <button className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-medium px-8 py-3 rounded-lg transition-colors duration-200">
             Contact Us
           </button>
         </div>

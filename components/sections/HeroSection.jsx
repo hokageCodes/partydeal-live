@@ -25,7 +25,7 @@ function Hero() {
         {/* Heading */}
         <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-[0.9] tracking-lighter mb-8 text-transparent bg-clip-text text-white">
           Nigeria's Premier <br /> 
-          <span className="text-yellow-400">Catering</span> Experience
+          <span className="text-partyYellow">Catering</span> Experience
         </h1>
 
         {/* Paragraph */}
@@ -35,7 +35,7 @@ function Hero() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-6 items-center">
-          <button className="group relative overflow-hidden px-8 py-4 bg-gradient-to-r from-yellow-400 to-yellow-500 text-black rounded-lg text-lg hover:from-yellow-500 hover:to-yellow-600 transition-all duration-300 shadow-2xl hover:shadow-yellow-500/25 transform hover:scale-105 hover:-translate-y-1">
+          <button className="group relative overflow-hidden px-8 py-4 bg-gradient-to-r from-yellow-400 to-partyYellow text-black rounded-lg text-lg hover:from-partyYellow hover:to-partyYellow transition-all duration-300 shadow-2xl hover:shadow-yellow-500/25 transform hover:scale-105 hover:-translate-y-1">
             <span className="relative z-10">Book an Event</span>
             <div className="absolute inset-0 bg-gradient-to-r from-yellow-300 to-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </button>

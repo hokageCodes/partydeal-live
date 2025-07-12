@@ -74,14 +74,14 @@ function Navbar() {
               {['Home', 'Catering', 'Order', 'Menu', 'Contact'].map((item) => (
                 <li
                   key={item}
-                  className="text-[20px] font-medium hover:text-yellow-400 transition-colors cursor-pointer"
+                  className="text-[20px] font-medium hover:text-partyYellow transition-colors cursor-pointer"
                 >
                   {item}
                 </li>
               ))}
             </ul>
             <div className="flex justify-center">
-              <button className="px-8 py-4 rounded-lg bg-yellow-400 hover:bg-yellow-500 text-black font-medium text-[16px] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+              <button className="px-8 py-4 rounded-lg bg-partyYellow hover:bg-partyYellow text-black font-medium text-[16px] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
                 Book Now
               </button>
             </div>

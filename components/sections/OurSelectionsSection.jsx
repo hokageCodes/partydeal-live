@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function OurSelectionsSection() {
   return (
-    <section className="w-full py-24 px-2 md:px-12 bg-[#FEFBF6] flex flex-col items-center text-center">
+    <section className="w-full py-12 px-2 md:px-12 bg-[#FEFBF6] flex flex-col items-center text-center">
       {/* Small Heading */}
       <h5 className="text-sm text-black uppercase tracking-widest mb-4">
         Our Menu
@@ -11,10 +11,10 @@ export default function OurSelectionsSection() {
 
       {/* Section Title */}
       <h2
-        className="text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] leading-[1.2] text-[#3D3C42] mb-16"
+        className="text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] leading-[1.2] text-black mb-16"
         style={{
           fontFamily: 'Coolvetica, sans-serif',
-          fontWeight: 400,
+          fontWeight: 500,
         }}
       >
         Our Client's Favourite Selections

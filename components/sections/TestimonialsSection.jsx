@@ -49,12 +49,12 @@ const TestimonialsSection = () => {
   const currentData = testimonials[currentTestimonial];
 
   return (
-    <section className="bg-yellow-400 py-20 w-full flex items-center justify-center">
+    <section className="bg-partyYellow py-20 w-full flex items-center justify-center">
       <div className="w-full max-w-7xl px-5 text-center">
-        <h5 className="text-sm font-semibold tracking-widest uppercase text-gray-800 mb-4 opacity-80">
+        <h5 className="text-sm font-medium tracking-widest uppercase text-black mb-4">
           TESTIMONIALS
         </h5>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-12">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-black mb-12">
           Client Reviews
         </h2>
 

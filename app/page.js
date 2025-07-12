@@ -4,6 +4,7 @@ import CateringServicesSection from '@/components/sections/CateringServicesSecti
 import FAQSection from '@/components/sections/FAQSection';
 import Hero from '@/components/sections/HeroSection';
 import OurSelectionsSection from '@/components/sections/OurSelectionsSection';
+import ReservationParallaxSection from '@/components/sections/ReservationSection';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <OurSelectionsSection />
       <TestimonialsSection />
       <FAQSection />
+      <ReservationParallaxSection />
     </main>
   );
 }
