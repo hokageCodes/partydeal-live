@@ -67,6 +67,13 @@ export const metadata = {
         height: 1080,
         alt: 'Party Deal Catering - Elegant food presentation and professional service',
         type: 'image/jpeg'
+      },
+      {
+        url: 'https://partydeal-live.vercel.app/assets/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Party Deal Catering - Premium Nigerian Catering Services',
+        type: 'image/jpeg'
       }
     ],
     videos: [
