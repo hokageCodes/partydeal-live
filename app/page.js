@@ -1,7 +1,9 @@
+"use client"
 import Navbar from '@/components/Navbar';
 import CateringServicesSection from '@/components/sections/CateringServicesSection';
 import Hero from '@/components/sections/HeroSection';
 import OurSelectionsSection from '@/components/sections/OurSelectionsSection';
+import TestimonialsSection from '@/components/sections/TestimonialsSection';
 
 export default function Home() {
   return (
@@ -15,6 +17,7 @@ export default function Home() {
       <Hero />
       <CateringServicesSection />
       <OurSelectionsSection />
+      <TestimonialsSection />
     </main>
   );
 }
