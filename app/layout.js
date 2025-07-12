@@ -90,7 +90,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Party Deal Catering - Nigeria\'s Premier Catering Company',
-    description: 'Transform your events with Nigeria\'s most trusted catering company. Premium food, exceptional service, unforgettable experiences.',
+    description: 'Mouth Watering Food. Premium food, exceptional service, unforgettable experiences.',
     site: '@partydealcatering',
     creator: '@partydealcatering',
     images: [
