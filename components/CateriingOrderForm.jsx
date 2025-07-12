@@ -64,7 +64,7 @@ Looking forward to your response!`;
 
     const encodedMessage = encodeURIComponent(message);
     const whatsappNumber = '2349035104366'; // replace with your WhatsApp number
-    const whatsappLink = `https://wa.me/message/BEVJAMHNAW2QJ1/${whatsappNumber}?text=${encodedMessage}`;
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
     window.open(whatsappLink, '_blank');
   };
 
