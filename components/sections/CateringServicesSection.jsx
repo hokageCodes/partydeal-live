@@ -1,59 +1,64 @@
 'use client';
+
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 export default function CateringServicesSection() {
   return (
-    <section className="w-full py-24 px-2 md:px-12 flex flex-col items-center justify-center bg-[#FEFBF6]">
+    <section className="w-full py-24 px-4 md:px-12 flex flex-col items-center justify-center bg-[#FEFBF6]">
       {/* Section Heading */}
-      <h2
-        className="text-[40px] sm:text-[48px] md:text-[56px] lg:text-[64px] leading-[48px] sm:leading-[56px] md:leading-[64px] lg:leading-[72px] mb-16 text-center text-black"
+      <motion.h2
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: 'easeOut' }}
+        viewport={{ once: true }}
+        className="text-[40px] sm:text-[48px] md:text-[56px] lg:text-[64px] leading-tight mb-16 text-center text-black"
         style={{
           fontFamily: 'Coolvetica, sans-serif',
           fontWeight: 500,
         }}
       >
         Our Catering Services
-      </h2>
+      </motion.h2>
 
       {/* Cards Row */}
       <div className="flex flex-col lg:flex-row gap-8 items-center justify-center w-full max-w-7xl">
-        {/* Left Card */}
-        <div
-          className="relative w-full max-w-[628px] h-[400px] md:h-[480px] rounded-xl overflow-hidden shadow-xl"
-        >
-          <Image
-            src="/assets/service1.png"
-            alt="Custom Catering Services"
-            fill
-            className="object-cover  bg-black/40  "
-            priority
-          />
-          <div className="absolute inset-0 bg-black/40" />
-          <div className="absolute inset-0 flex items-center justify-center px-4 text-center">
-            <h3 className="text-white text-[44px] sm:text-[28px] md:text-[32px] font-semibold leading-tight tracking-wider">
-              Custom Catering Services
-            </h3>
-          </div>
-        </div>
-
-        {/* Right Card */}
-        <div
-          className="relative w-full max-w-[628px] h-[400px] md:h-[480px] rounded-xl overflow-hidden shadow-xl"
-        >
-          <Image
-            src="/assets/service2.png"
-            alt="Custom Orders"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-black/40" />
-          <div className="absolute inset-0 flex items-center justify-center px-4 text-center">
-            <h3 className="text-white text-[44px] sm:text-[28px] md:text-[32px] font-semibold leading-tight tracking-wider">
-              Custom Orders
-            </h3>
-          </div>
-        </div>
+        {[ 
+          {
+            src: '/assets/img/party1.jpg',
+            alt: 'Custom Catering Services',
+            title: 'Custom Catering Services',
+          },
+          {
+            src: '/assets/custom1.jpg',
+            alt: 'Custom Orders',
+            title: 'Custom Orders',
+          },
+        ].map(({ src, alt, title }, i) => (
+          <motion.div
+            key={i}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, ease: 'easeOut', delay: i * 0.2 }}
+            viewport={{ once: true }}
+            className="relative w-full max-w-[628px] h-[400px] md:h-[480px] rounded-xl overflow-hidden shadow-xl"
+          >
+            <Image
+              src={src}
+              alt={alt}
+              fill
+              loading="lazy"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 628px"
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-black/40 z-10" />
+            <div className="absolute inset-0 z-20 flex items-center justify-center px-4 text-center">
+              <h3 className="text-white text-[32px] sm:text-[28px] md:text-[32px] font-semibold leading-tight tracking-wider">
+                {title}
+              </h3>
+            </div>
+          </motion.div>
+        ))}
       </div>
     </section>
   );

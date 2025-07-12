@@ -6,8 +6,7 @@ const Footer = () => {
   return (
     <footer className="w-full bg-[#E9E1D6] px-6 py-6 flex justify-center">
       <div
-        className="w-full max-w-[1440px] bg-[#452013] rounded-[20px] px-10 py-[56px] flex flex-col lg:flex-row items-center justify-between gap-10"
-        style={{ height: '136px' }}
+        className="w-full max-w-[1440px] bg-[#452013] rounded-[20px] px-6 py-10 flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-10 text-white"
       >
         {/* Logo (Left) */}
         <div className="flex-shrink-0">
@@ -21,8 +20,8 @@ const Footer = () => {
         </div>
 
         {/* Copyright (Center) */}
-        <p className="text-white text-sm sm:text-base text-center">
-          © {new Date().getFullYear()} Party Deal Catering. All rights reserved.
+        <p className="text-sm sm:text-base text-center leading-tight">
+          © {new Date().getFullYear()} Party Deal Catering.
         </p>
 
         {/* Social Icons (Right) */}
@@ -31,7 +30,7 @@ const Footer = () => {
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-yellow-400 transition-colors"
+            className="hover:text-yellow-400 transition-colors"
             aria-label="Instagram"
           >
             <Instagram size={20} />
@@ -40,7 +39,7 @@ const Footer = () => {
             href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-yellow-400 transition-colors"
+            className="hover:text-yellow-400 transition-colors"
             aria-label="Facebook"
           >
             <Facebook size={20} />

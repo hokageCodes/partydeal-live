@@ -7,7 +7,7 @@ const ReservationParallaxSection = () => {
       {/* Parallax Background */}
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover z-0"
-        style={{ backgroundImage: "url('/assets/parallax.jpg')" }}
+        style={{ backgroundImage: "url('/assets/img/buffet.jpg')" }}
       />
 
       {/* Overlay */}

@@ -23,10 +23,10 @@ export default function OurSelectionsSection() {
       {/* Cards Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {[
-          { src: '/assets/selection1.png', caption: 'Party Jollof Rice' },
-          { src: '/assets/selection2.jpg', caption: 'Assorted Small Chops' },
-          { src: '/assets/selection3.jpg', caption: 'Grilled Catfish & Sauce' },
-          { src: '/assets/selection4.jpg', caption: 'Coconut Fried Rice' },
+          { src: '/assets/img/5.jpg', caption: 'Party Jollof Rice' },
+          { src: '/assets/img/small.jpg', caption: 'Assorted Small Chops' },
+          { src: '/assets/selection3.jpg', caption: 'Assorted Traditional Food' },
+          { src: '/assets/img/zobo.jpg', caption: 'Asake Zobo' },
         ].map(({ src, caption }, i) => (
           <figure
             key={i}

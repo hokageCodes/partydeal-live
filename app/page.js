@@ -21,7 +21,7 @@ export default function Home() {
       <OurSelectionsSection />
       <TestimonialsSection />
       <FAQSection />
-      <ReservationParallaxSection />
+      {/* <ReservationParallaxSection /> */}
     </main>
   );
 }

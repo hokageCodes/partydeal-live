@@ -5,16 +5,16 @@ import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      text: "Party Deal Catering made our wedding absolutely perfect! The food was so good that our guests are still talking about it three months later. Their team was professional, punctual, and the presentation was beautiful. Our families from both Lagos and Abuja were impressed. Thank you for making our special day unforgettable!",
-      name: "Anne Maria",
-      title: "Happy Customer",
-      image: "/assets/selection1.png"
+      text: "Outstanding service from start to finish! Their team handles all our events flawlessly. Their variety of dishes is impressive and everything is prepared to perfection. Our guests are usually impressed with the quality and presentation. Will definitely recommend their services",
+      name: "David Okafor",
+      title: "Head Planning Committee, Yaba Baptist Church",
+      image: "/assets/ybc.png"
     },
     {
-      text: "Outstanding service from start to finish! The team handled our corporate event flawlessly. The variety of dishes was impressive and everything was prepared to perfection. Our clients were thoroughly impressed with the quality and presentation. Will definitely use their services again!",
-      name: "David Okafor",
-      title: "Event Coordinator",
-      image: "/assets/selection1.png"
+      text: "At the Opening/Launch of our company, we hired Party Deal's Custom Order service and they were detailed! From their timely delivery, to ensuring that request was met before leaving the premises (even though it was a drop-off, reveals a lot about their quality of service and customer satisfaction policies.)",
+      name: "Busayo Ogunde",
+      title: "Founder, Hokage Creative Labs",
+      image: "/assets/hcl-logo.png"
     },
     {
       text: "The best catering experience we've had! From the initial consultation to the final cleanup, everything was handled professionally. The food quality exceeded our expectations and the presentation was absolutely stunning. Our anniversary celebration was made perfect by their exceptional service.",
@@ -63,9 +63,9 @@ const TestimonialsSection = () => {
           {/* Left Arrow */}
           <button
             onClick={prevTestimonial}
-            className="w-12 h-12 bg-white hover:bg-white/80 rounded-full flex items-center justify-center shadow-md transition-transform duration-300 hover:scale-110"
+            className="w-12 h-12 bg-black hover:bg-white/80 rounded-full flex items-center justify-center shadow-md transition-transform duration-300 hover:scale-110"
           >
-            <ChevronLeft className="w-6 h-6 text-gray-800" />
+            <ChevronLeft className="w-6 h-6 text-white" />
           </button>
 
           {/* Testimonial Content */}
@@ -102,9 +102,9 @@ const TestimonialsSection = () => {
           {/* Right Arrow */}
           <button
             onClick={nextTestimonial}
-            className="w-12 h-12 bg-white hover:bg-white/80 rounded-full flex items-center justify-center shadow-md transition-transform duration-300 hover:scale-110"
+            className="w-12 h-12 bg-black hover:bg-white/80 rounded-full flex items-center justify-center shadow-md transition-transform duration-300 hover:scale-110"
           >
-            <ChevronRight className="w-6 h-6 text-gray-800" />
+            <ChevronRight className="w-6 h-6 text-white" />
           </button>
         </div>
 

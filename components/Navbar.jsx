@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,6 +17,18 @@ function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const navItems = [
+    { name: 'Home', href: '/' },
+    { name: 'Catering', href: '/catering' },
+    { name: 'Order', href: '/order' },
+    { name: 'Menu', href: '/menu' },
+    { name: 'Contact', href: '/contact' }
+  ];
+
+  const handleMobileMenuClose = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 py-4 transition-all duration-300">
       {/* Background Layer */}
@@ -29,23 +42,27 @@ function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="shrink-0 z-50">
-            <Image
-              src="/assets/logo.png"
-              alt="Logo"
-              width={120}
-              height={40}
-              className="object-contain"
-            />
+            <Link href="/">
+              <Image
+                src="/assets/logo.png"
+                alt="Logo"
+                width={120}
+                height={40}
+                className="object-contain hover:scale-105 transition-transform duration-300"
+              />
+            </Link>
           </div>
 
           {/* Desktop Nav Links */}
           <ul className="hidden lg:flex gap-8 items-center text-white">
-            {['Home', 'Catering', 'Order', 'Menu', 'Contact'].map((item) => (
-              <li
-                key={item}
-                className="text-[16px] font-medium hover:text-yellow-400 transition-all duration-300 cursor-pointer hover:scale-105"
-              >
-                {item}
+            {navItems.map((item) => (
+              <li key={item.name}>
+                <Link
+                  href={item.href}
+                  className="text-[16px] font-medium hover:text-yellow-400 transition-all duration-300 cursor-pointer hover:scale-105 block"
+                >
+                  {item.name}
+                </Link>
               </li>
             ))}
           </ul>
@@ -60,9 +77,11 @@ function Navbar() {
           </button>
 
           {/* Desktop CTA */}
-          <button className="hidden sm:block px-6 py-3 rounded-lg bg-yellow-400 hover:bg-yellow-500 text-black font-medium text-[14px] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-            Book Now
-          </button>
+          <Link href="/book">
+            <button className="hidden sm:block px-6 py-3 rounded-lg bg-yellow-400 hover:bg-yellow-500 text-black font-medium text-[14px] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+              Book Now
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -71,19 +90,27 @@ function Navbar() {
         <div className="lg:hidden fixed inset-0 bg-black/90 backdrop-blur-sm z-40 pt-32">
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl mx-4 p-8">
             <ul className="flex flex-col items-center space-y-14 text-white mb-8">
-              {['Home', 'Catering', 'Order', 'Menu', 'Contact'].map((item) => (
-                <li
-                  key={item}
-                  className="text-[20px] font-medium hover:text-partyYellow transition-colors cursor-pointer"
-                >
-                  {item}
+              {navItems.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
+                    className="text-[20px] font-medium hover:text-yellow-400 transition-colors cursor-pointer block"
+                    onClick={handleMobileMenuClose}
+                  >
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
             <div className="flex justify-center">
-              <button className="px-8 py-4 rounded-lg bg-partyYellow hover:bg-partyYellow text-black font-medium text-[16px] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-                Book Now
-              </button>
+              <Link href="/book">
+                <button 
+                  className="px-8 py-4 rounded-lg bg-yellow-400 hover:bg-yellow-500 text-black font-medium text-[16px] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                  onClick={handleMobileMenuClose}
+                >
+                  Book Now
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -92,4 +119,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navbar;  
