@@ -39,8 +39,8 @@ function Navbar() {
             : 'bg-transparent'
         }`}
       >
-        <div className="flex justify-between items-center">
-          {/* Logo */}
+        <div className="flex justify-between items-center w-full">
+          {/* Logo - Far left on all devices */}
           <div className="shrink-0 z-50">
             <Link href="/">
               <Image
@@ -67,9 +67,9 @@ function Navbar() {
             ))}
           </ul>
 
-          {/* Mobile Menu Toggle */}
+          {/* Mobile Menu Toggle - Far right on mobile */}
           <button
-            className="lg:hidden text-white z-50 p-2 hover:bg-white/10 rounded-lg transition-colors"
+            className="lg:hidden text-white ml-36 z-50 p-2 hover:bg-white/10 rounded-lg transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -85,10 +85,10 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu Overlay */}
+      {/* Mobile Menu Overlay - Fixed background bleed */}
       {isMenuOpen && (
-        <div className="lg:hidden fixed inset-0 bg-black/90 backdrop-blur-sm z-40 pt-32">
-          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl mx-4 p-8">
+        <div className="lg:hidden fixed inset-0 bg-black/95 backdrop-blur-md z-40 pt-32">
+          <div className="bg-black/80 backdrop-blur-xl border border-white/20 rounded-2xl mx-4 p-8 shadow-2xl">
             <ul className="flex flex-col items-center space-y-14 text-white mb-8">
               {navItems.map((item) => (
                 <li key={item.name}>
@@ -119,4 +119,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;  
+export default Navbar;
