@@ -49,7 +49,7 @@ export const metadata = {
   openGraph: {
     title: 'Party Deal Catering - Nigeria\'s Premier Catering Company',
     description: 'Transform your events with Nigeria\'s most trusted catering company. Premium food, exceptional service, unforgettable experiences across Lagos, Abuja & nationwide.',
-    url: 'https://partydeal-live.vercel.app/',
+    url: 'https://partydeal-live.vercel.app',
     siteName: 'Party Deal Catering',
     type: 'website',
     locale: 'en_NG',
