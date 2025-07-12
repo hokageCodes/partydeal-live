@@ -78,7 +78,7 @@ const FAQSection = () => {
             Still have questions? We'd love to help!
           </p>
           <button className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-medium px-8 py-3 rounded-lg transition-colors duration-200">
-            Contact Us
+            <a href="/contact">Contact Us</a>
           </button>
         </div>
       </div>

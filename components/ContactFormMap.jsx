@@ -116,7 +116,7 @@ export default function ContactFormWithMap() {
             />
 
             <button className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-medium px-8 py-3 rounded-lg transition-colors duration-200">
-                Contact Us
+                <a href="/order">Contact Us</a>
             </button>
             </form>
 

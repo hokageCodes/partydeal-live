@@ -36,11 +36,11 @@ function Hero() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-6 items-center">
           <button className="group relative overflow-hidden px-8 py-4 bg-gradient-to-r from-yellow-400 to-partyYellow text-black rounded-lg text-lg hover:from-partyYellow hover:to-partyYellow transition-all duration-300 shadow-2xl hover:shadow-yellow-500/25 transform hover:scale-105 hover:-translate-y-1">
-            <span className="relative z-10">Book an Event</span>
+            <a href="/order" className="relative z-10">Book an Event</a>
             <div className="absolute inset-0 bg-gradient-to-r from-yellow-300 to-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </button>
           <button className="group px-8 py-4 border-2 border-white/50 text-white rounded-lg font-semibold text-lg hover:bg-white hover:text-black transition-all duration-300 shadow-2xl hover:shadow-white/25 transform hover:scale-105 hover:-translate-y-1 backdrop-blur-sm">
-            Order Food Packs
+            <a href="/order">Order Food Packs</a>
           </button>
         </div>
 

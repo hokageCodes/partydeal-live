@@ -103,7 +103,7 @@ function Navbar() {
               ))}
             </ul>
             <div className="flex justify-center">
-              <Link href="/book">
+              <Link href="/order">
                 <button 
                   className="px-8 py-4 rounded-lg bg-yellow-400 hover:bg-yellow-500 text-black font-medium text-[16px] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                   onClick={handleMobileMenuClose}

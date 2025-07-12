@@ -24,7 +24,7 @@ const ReservationParallaxSection = () => {
         </p>
 
         <button className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-medium px-8 py-3 rounded-lg transition-colors duration-200">
-            Book Your Next Event
+            <a href="/order">Book Your Next Event</a>
           </button>
       </div>
     </section>
