@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import React from 'react';
 
 const ReservationParallaxSection = () => {
@@ -23,9 +24,12 @@ const ReservationParallaxSection = () => {
           Secure your spot at our next event. Whether it’s a wedding, party, or private dinner, we’re ready to serve you.
         </p>
 
-        <button className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-medium px-8 py-3 rounded-lg transition-colors duration-200">
-          <a href="/order">Book Your Next Event</a>
-        </button>
+        <Link
+          href="/order"
+          className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-medium px-8 py-3 rounded-lg transition-colors duration-200 text-center inline-block"
+        >
+          Book your next event
+        </Link>
       </div>
     </section>
   );

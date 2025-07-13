@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail, MessageSquare } from 'lucide-react';
 import Navbar from './Navbar';
+import Link from 'next/link';
 
 export default function ContactFormWithMap() {
   const [formData, setFormData] = useState({
@@ -115,9 +116,12 @@ export default function ContactFormWithMap() {
                 className="w-full border border-gray-300 px-4 py-3 rounded-md resize-none focus:outline-none focus:ring-1 focus:ring-black"
             />
 
-            <button className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-medium px-8 py-3 rounded-lg transition-colors duration-200">
-                <a href="/order">Contact Us</a>
-            </button>
+            <Link
+              href="/contact"
+              className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-medium px-8 py-3 rounded-lg transition-colors duration-200 text-center inline-block"
+            >
+              Contact Us
+            </Link>
             </form>
 
             {/* LOCATION */}

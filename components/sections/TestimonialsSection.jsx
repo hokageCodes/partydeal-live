@@ -61,6 +61,8 @@ const TestimonialsSection = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between gap-6 w-full">
           {/* Left Arrow */}
           <button
+            type="button"
+            aria-label="Previous testimonial"
             onClick={prevTestimonial}
             className="w-12 h-12 bg-black hover:bg-white/80 rounded-full flex items-center justify-center shadow-md transition-transform duration-300 hover:scale-110"
           >
@@ -109,6 +111,8 @@ const TestimonialsSection = () => {
 
           {/* Right Arrow */}
           <button
+            type="button"
+            aria-label="Next testimonial"
             onClick={nextTestimonial}
             className="w-12 h-12 bg-black hover:bg-white/80 rounded-full flex items-center justify-center shadow-md transition-transform duration-300 hover:scale-110"
           >
