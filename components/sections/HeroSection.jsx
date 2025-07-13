@@ -35,21 +35,21 @@ function Hero() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-6 items-center">
-          <button className="group relative overflow-hidden px-8 py-4 bg-gradient-to-r from-yellow-400 to-partyYellow text-black rounded-lg text-lg hover:from-partyYellow hover:to-partyYellow transition-all duration-300 shadow-2xl hover:shadow-yellow-500/25 transform hover:scale-105 hover:-translate-y-1">
-            <a href="/order" className="relative z-10">Book an Event</a>
-            <div className="absolute inset-0 bg-gradient-to-r from-yellow-300 to-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <button className="group relative overflow-hidden min-w-[220px] px-8 py-4 bg-gradient-to-r from-yellow-400 to-partyYellow text-black rounded-lg text-lg font-semibold hover:from-partyYellow hover:to-partyYellow transition-all duration-300 shadow-2xl hover:shadow-yellow-500/25 transform hover:scale-105 hover:-translate-y-1">
+            <a href="/order" className="relative z-10 block w-full">Book an Event</a>
+            <div className="absolute inset-0 bg-gradient-to-r from-yellow-300 to-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </button>
-          <button className="group px-8 py-4 border-2 border-white/50 text-white rounded-lg font-semibold text-lg hover:bg-white hover:text-black transition-all duration-300 shadow-2xl hover:shadow-white/25 transform hover:scale-105 hover:-translate-y-1 backdrop-blur-sm">
-            <a href="/order">Order Food Packs</a>
+          <button className="group min-w-[220px] px-8 py-4 border-2 border-white/50 text-white rounded-lg font-semibold text-lg hover:bg-white hover:text-black transition-all duration-300 shadow-2xl hover:shadow-white/25 transform hover:scale-105 hover:-translate-y-1 backdrop-blur-sm text-center">
+            <a href="/order" className="block w-full">Order Food Packs</a>
           </button>
         </div>
+      </div>
 
-        {/* Scroll Indicator */}
-        {/* <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
-          </div>
-        </div> */}
+      {/* ✅ Scroll Indicator at the very bottom */}
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
+        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
+        </div>
       </div>
     </section>
   );

@@ -3,7 +3,8 @@ import Image from 'next/image';
 
 export default function OurSelectionsSection() {
   return (
-    <section className="w-full py-12 px-2 md:px-12 bg-[#FEFBF6] flex flex-col items-center text-center">
+    <section className="w-full py-12 px-2 sm:px-4 md:px-12 bg-[#FEFBF6] flex flex-col items-center text-center">
+
       {/* Small Heading */}
       <h5 className="text-sm text-black uppercase tracking-widest mb-4">
         Our Menu
@@ -22,37 +23,38 @@ export default function OurSelectionsSection() {
 
       {/* Cards Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        {[
-          { src: '/assets/img/5.jpg', caption: 'Party Jollof Rice' },
-          { src: '/assets/img/small.jpg', caption: 'Assorted Small Chops' },
-          { src: '/assets/selection3.jpg', caption: 'Assorted Traditional Food' },
-          { src: '/assets/img/zobo.jpg', caption: 'Asake Zobo' },
-        ].map(({ src, caption }, i) => (
-          <figure
-            key={i}
-            className="w-[302px] h-[400px] flex flex-col items-center gap-4"
-            style={{ opacity: 1 }}
+      {[
+  { src: '/assets/img/5.jpg', caption: 'Party Jollof Rice' },
+  { src: '/assets/img/small.jpg', caption: 'Assorted Small Chops' },
+  { src: '/assets/selection3.jpg', caption: 'Assorted Traditional Food' },
+  { src: '/assets/img/zobo.jpg', caption: 'Asake Zobo' },
+      ].map(({ src, caption }, i) => (
+        <figure
+          key={i}
+          className="w-[302px] h-[400px] sm:w-[320px] sm:h-[420px] md:w-[302px] md:h-[400px] flex flex-col items-center gap-4"
+          style={{ opacity: 1 }}
+        >
+          <div className="w-[350px] h-[348px] sm:w-[320px] sm:h-[360px] md:w-[302px] md:h-[348px] relative rounded-[12px] overflow-hidden">
+            <Image
+              src={src}
+              alt={caption}
+              fill
+              className="object-cover"
+              priority={i < 2}
+            />
+          </div>
+          <figcaption
+            className="text-[22px] sm:text-[24px] md:text-[26px] leading-[32px] text-[#3D3C42] text-center"
+            style={{
+              fontFamily: 'Satoshi, sans-serif',
+              fontWeight: 700,
+            }}
           >
-            <div className="w-[302px] h-[348px] relative rounded-[12px] overflow-hidden">
-              <Image
-                src={src}
-                alt={caption}
-                fill
-                className="object-cover"
-                priority={i < 2}
-              />
-            </div>
-            <figcaption
-              className="text-[26px] leading-[32px] text-[#3D3C42]"
-              style={{
-                fontFamily: 'Satoshi, sans-serif',
-                fontWeight: 700,
-              }}
-            >
-              {caption}
-            </figcaption>
-          </figure>
-        ))}
+            {caption}
+          </figcaption>
+        </figure>
+      ))}
+
       </div>
     </section>
   );

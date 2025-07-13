@@ -20,7 +20,7 @@ const TestimonialsSection = () => {
       text: "The best catering experience we've had! From the initial consultation to the final cleanup, everything was handled professionally. The food quality exceeded our expectations and the presentation was absolutely stunning. Our anniversary celebration was made perfect by their exceptional service.",
       name: "Funmi Adebayo",
       title: "Satisfied Client",
-      image: "/assets/selection1.png"
+      image: "/assets/img/logo-icon.png"
     }
   ];
 
@@ -50,7 +50,7 @@ const TestimonialsSection = () => {
 
   return (
     <section className="bg-partyYellow py-20 w-full flex items-center justify-center">
-      <div className="w-full max-w-7xl px-5 text-center">
+      <div className="w-full max-w-7xl px-2 sm:px-4 text-center">
         <h5 className="text-sm font-medium tracking-widest uppercase text-black mb-4">
           TESTIMONIALS
         </h5>
@@ -68,10 +68,19 @@ const TestimonialsSection = () => {
             <ChevronLeft className="w-6 h-6 text-white" />
           </button>
 
-          {/* Testimonial Content */}
-          <div className="flex flex-col md:flex-row bg-white rounded-3xl overflow-hidden shadow-xl w-full max-w-5xl min-h-[24rem]">
-            {/* Text Section - 70% */}
+          {/* Testimonial Card */}
+          <div className="flex flex-col md:flex-row bg-white rounded-3xl overflow-hidden shadow-xl w-full max-w-5xl min-h-[24rem] px-2 sm:px-4">
+            {/* Text Section */}
             <div className="w-full md:w-3/5 p-6 md:p-10 flex flex-col justify-center relative">
+              {/* Mobile Avatar */}
+              <div className="flex justify-center mb-4 md:hidden">
+                <img
+                  src={currentData.image}
+                  alt={currentData.name}
+                  className="w-20 h-20 rounded-full object-cover border-2 border-yellow-400"
+                />
+              </div>
+
               <div className="text-base md:text-lg text-gray-800 italic mb-6 relative leading-relaxed">
                 <span className="absolute -top-5 -left-5 text-5xl text-yellow-400/30 font-serif">"</span>
                 {currentData.text}
@@ -89,8 +98,8 @@ const TestimonialsSection = () => {
               </div>
             </div>
 
-            {/* Image Section - 30% */}
-            <div className="w-full md:w-2/5 h-64 md:h-auto relative">
+            {/* Desktop Image Section */}
+            <div className="hidden md:block md:w-2/5 h-auto relative">
               <img
                 src={currentData.image}
                 alt={currentData.name}
