@@ -30,7 +30,6 @@ const TestimonialsSection = () => {
     const interval = setInterval(() => {
       setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
     }, 5000);
-
     return () => clearInterval(interval);
   }, [testimonials.length]);
 
@@ -50,9 +49,9 @@ const TestimonialsSection = () => {
 
   return (
     <section className="bg-partyYellow py-20 w-full flex items-center justify-center">
-      <div className="w-full max-w-7xl px-2 sm:px-4 text-center">
+      <div className="w-full max-w-7xl px-4 text-center">
         <h5 className="text-sm font-medium tracking-widest uppercase text-black mb-4">
-          TESTIMONIALS
+          Testimonials
         </h5>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-black mb-12">
           Client Reviews
@@ -69,7 +68,7 @@ const TestimonialsSection = () => {
           </button>
 
           {/* Testimonial Card */}
-          <div className="flex flex-col md:flex-row bg-white rounded-3xl overflow-hidden shadow-xl w-full max-w-5xl min-h-[24rem] px-2 sm:px-4">
+          <div className="flex flex-col md:flex-row bg-white rounded-3xl overflow-hidden shadow-xl w-full max-w-5xl min-h-[28rem] px-2 sm:px-4">
             {/* Text Section */}
             <div className="w-full md:w-3/5 p-6 md:p-10 flex flex-col justify-center relative">
               {/* Mobile Avatar */}

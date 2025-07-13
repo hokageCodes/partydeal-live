@@ -10,7 +10,7 @@ export default function CateringPage() {
     <main className="relative">
       {/* Floating Navbar + Banner */}
       <section
-        className="relative w-full min-h-[400px] bg-cover bg-center flex items-center justify-center px-4 sm:px-10 md:px-20 lg:px-32 xl:px-60"
+        className="relative w-full min-h-[400px] bg-cover bg-center flex items-center justify-center px-2 sm:px-10 md:px-20 lg:px-32 xl:px-60"
         style={{
           backgroundImage: "url('/assets/cater1.jpg')",
         }}

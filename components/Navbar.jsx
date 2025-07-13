@@ -41,17 +41,18 @@ function Navbar() {
       >
         <div className="flex justify-between items-center w-full">
           {/* Logo - Far left on all devices */}
-          <div className="shrink-0 z-50">
-            <Link href="/">
-              <Image
-                src="/assets/logo.png"
-                alt="Logo"
-                width={120}
-                height={40}
-                className="object-contain hover:scale-105 transition-transform duration-300"
-              />
-            </Link>
-          </div>
+          <div className="relative w-[120px] h-[40px] shrink-0 z-50">
+  <Link href="/">
+    <Image
+      src="/assets/logo.png"
+      alt="Party Deal Catering Logo"
+      fill
+      sizes="(max-width: 768px) 100px, 120px"
+      className="object-contain hover:scale-105 transition-transform duration-300"
+    />
+  </Link>
+</div>
+
 
           {/* Desktop Nav Links */}
           <ul className="hidden lg:flex gap-8 items-center text-white">
@@ -77,7 +78,7 @@ function Navbar() {
           </button>
 
           {/* Desktop CTA */}
-          <Link href="/book">
+          <Link href="/order">
             <button className="hidden sm:block px-6 py-3 rounded-lg bg-yellow-400 hover:bg-yellow-500 text-black font-medium text-[14px] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
               Book Now
             </button>

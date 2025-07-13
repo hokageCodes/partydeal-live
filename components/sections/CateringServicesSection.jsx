@@ -5,14 +5,14 @@ import Image from 'next/image';
 
 export default function CateringServicesSection() {
   return (
-    <section className="w-full py-24 px-4 md:px-12 flex flex-col items-center justify-center bg-[#FEFBF6]">
+    <section className="w-full py-8 px-4 md:py-24 md:px-12 flex flex-col items-center justify-center bg-[#FEFBF6]">
       {/* Section Heading */}
       <motion.h2
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
         viewport={{ once: true }}
-        className="text-[40px] sm:text-[48px] md:text-[56px] lg:text-[64px] leading-tight mb-16 text-center text-black"
+        className="text-[40px] sm:text-[48px] md:text-[56px] lg:text-[64px] md:mb-12 leading-tight mb-8 text-center text-black"
         style={{
           fontFamily: 'Coolvetica, sans-serif',
           fontWeight: 500,

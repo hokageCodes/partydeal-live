@@ -23,7 +23,7 @@ function Hero() {
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col items-center text-center w-full max-w-6xl animate-fade-in">
         {/* Heading */}
-        <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-[0.9] tracking-lighter mb-8 text-transparent bg-clip-text text-white">
+        <h1 className="text-5xl leading-[50px] sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-[0.9] tracking-lighter mb-8 text-transparent bg-clip-text text-white">
           Nigeria's Premier <br /> 
           <span className="text-partyYellow">Catering</span> Experience
         </h1>
