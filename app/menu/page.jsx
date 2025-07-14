@@ -10,7 +10,7 @@ export default function Page() {
       <section
         className="relative w-full min-h-[400px] bg-cover bg-center flex items-center justify-center px-4 sm:px-10 md:px-20 lg:px-32 xl:px-60"
         style={{
-          backgroundImage: "url('/assets/menu-bg.jpg')",
+          backgroundImage: "url('/assets/img/hero.webp')",
         }}
       >
         {/* Dark overlay */}

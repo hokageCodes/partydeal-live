@@ -8,19 +8,19 @@ const TestimonialsSection = () => {
       text: "Outstanding service from start to finish! Their team handles all our events flawlessly. Their variety of dishes is impressive and everything is prepared to perfection. Our guests are usually impressed with the quality and presentation. Will definitely recommend their services",
       name: "David Okafor",
       title: "Head Planning Committee, Yaba Baptist Church",
-      image: "/assets/ybc.png"
+      image: "/assets/ybc.webp"
     },
     {
       text: "At the Opening/Launch of our company, we hired Party Deal's Custom Order service and they were detailed! From their timely delivery, to ensuring that request was met before leaving the premises (even though it was a drop-off, reveals a lot about their quality of service and customer satisfaction policies.)",
       name: "Busayo Ogunde",
       title: "Founder, Hokage Creative Labs",
-      image: "/assets/hcl-logo.png"
+      image: "/assets/hcl-logo.webp"
     },
     {
       text: "The best catering experience we've had! From the initial consultation to the final cleanup, everything was handled professionally. The food quality exceeded our expectations and the presentation was absolutely stunning. Our anniversary celebration was made perfect by their exceptional service.",
       name: "Funmi Adebayo",
       title: "Satisfied Client",
-      image: "/assets/img/logo-icon.png"
+      image: "/assets/img/logo-icon.webp"
     }
   ];
 

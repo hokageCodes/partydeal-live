@@ -11,7 +11,7 @@ const Footer = () => {
         {/* Logo (Left) */}
         <div className="flex-shrink-0">
           <Image
-            src="/assets/logo.png"
+            src="/assets/logo.webp"
             alt="Logo"
             width={120}
             height={40}

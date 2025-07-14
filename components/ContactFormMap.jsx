@@ -36,7 +36,7 @@ export default function ContactFormWithMap() {
     <section
         className="relative w-full min-h-[400px] bg-cover bg-center flex items-center justify-center px-4 sm:px-10 md:px-20 lg:px-32 xl:px-60"
         style={{
-          backgroundImage: "url('/assets/cater2.jpg')",
+          backgroundImage: "url('/assets/cater2.webp')",
         }}
       >
         {/* Dark overlay */}

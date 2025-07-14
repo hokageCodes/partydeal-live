@@ -44,7 +44,7 @@ function Navbar() {
           <div className="relative w-[120px] h-[40px] shrink-0 z-50">
             <Link href="/">
               <Image
-                src="/assets/logo.png"
+                src="/assets/logo.webp"
                 alt="Party Deal Catering Logo"
                 fill
                 sizes="(max-width: 768px) 100px, 120px"

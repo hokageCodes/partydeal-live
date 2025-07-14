@@ -10,7 +10,7 @@ function Hero() {
     <section className="relative w-full h-screen flex items-center justify-center px-2 sm:px-12 md:px-24 lg:px-48 text-white overflow-hidden">
       {/* Background Image */}
         <Image
-          src="/assets/hero-bg.jpg"
+          src="/assets/hero-bg.webp"
           alt="Hero background"
           fill
           priority

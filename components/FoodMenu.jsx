@@ -14,84 +14,84 @@ export default function CateringMenuComponent() {
       id: 1,
       name: 'Jollof Rice',
       category: 'Rice',
-      image: '/assets/selection1.png',
+      image: '/assets/selection1.webp',
       description: 'Traditional Nigerian jollof rice with spices and vegetables'
     },
     {
       id: 2,
       name: 'Fried Rice',
       category: 'Rice',
-      image: '/assets/selection1.png',
+      image: '/assets/selection1.webp',
       description: 'Colorful fried rice with mixed vegetables and protein'
     },
     {
       id: 3,
       name: 'Prime Truffle Ribeye',
       category: 'Proteins',
-      image: '/assets/selection1.png',
+      image: '/assets/selection1.webp',
       description: 'Premium ribeye steak with truffle seasoning'
     },
     {
       id: 4,
       name: 'Chicken Peppersoup',
       category: 'Soups',
-      image: '/assets/selection1.png',
+      image: '/assets/selection1.webp',
       description: 'Spicy chicken pepper soup with traditional spices'
     },
     {
       id: 5,
       name: 'Coconut Rice',
       category: 'Rice',
-      image: '/assets/selection1.png',
+      image: '/assets/selection1.webp',
       description: 'Fragrant coconut rice with aromatic spices'
     },
     {
       id: 6,
       name: 'Egusi Soup',
       category: 'Soups',
-      image: '/assets/selection1.png',
+      image: '/assets/selection1.webp',
       description: 'Traditional egusi soup with assorted meat'
     },
     {
       id: 7,
       name: 'Pounded Yam',
       category: 'Swallows',
-      image: '/assets/selection1.png',
+      image: '/assets/selection1.webp',
       description: 'Smooth pounded yam served fresh'
     },
     {
       id: 8,
       name: 'Grilled Chicken',
       category: 'Proteins',
-      image: '/assets/selection1.png',
+      image: '/assets/selection1.webp',
       description: 'Perfectly grilled chicken with special marinade'
     },
     {
       id: 9,
       name: 'Eba',
       category: 'Swallows',
-      image: '/assets/selection1.png',
+      image: '/assets/selection1.webp',
       description: 'Traditional cassava flour meal'
     },
     {
       id: 10,
       name: 'Plantain',
       category: 'Sides',
-      image: '/assets/selection1.png',
+      image: '/assets/selection1.webp',
       description: 'Sweet fried plantain slices'
     },
     {
       id: 11,
       name: 'Fresh Juice',
       category: 'Drinks',
-      image: '/assets/selection1.png',
+      image: '/assets/selection1.webp',
       description: 'Fresh tropical fruit juice blend'
     },
     {
       id: 12,
       name: 'Soft Drinks',
       category: 'Drinks',
-      image: '/assets/selection1.png',
+      image: '/assets/selection1.webp',
       description: 'Assorted soft drinks and beverages'
     }
   ];

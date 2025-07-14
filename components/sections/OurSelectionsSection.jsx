@@ -22,10 +22,10 @@ export default function OurSelectionsSection() {
       {/* Cards Grid */}
       <div className="w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10">
         {[
-          { src: '/assets/img/5.jpg', caption: 'Party Jollof Rice' },
-          { src: '/assets/img/small.jpg', caption: 'Assorted Small Chops' },
+          { src: '/assets/img/5.webp', caption: 'Party Jollof Rice' },
+          { src: '/assets/img/small.webp', caption: 'Assorted Small Chops' },
           { src: '/assets/selection3.jpg', caption: 'Assorted Traditional Food' },
-          { src: '/assets/img/zobo.jpg', caption: 'Asake Zobo' },
+          { src: '/assets/img/zobo.webp', caption: 'Asake Zobo' },
         ].map(({ src, caption }, i) => (
           <figure
             key={i}

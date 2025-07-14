@@ -25,12 +25,12 @@ export default function CateringServicesSection() {
       <div className="flex flex-col lg:flex-row gap-8 items-center justify-center w-full max-w-7xl">
         {[ 
           {
-            src: '/assets/img/party1.jpg',
+            src: '/assets/img/party1.webp',
             alt: 'Custom Catering Services',
             title: 'Custom Catering Services',
           },
           {
-            src: '/assets/custom1.jpg',
+            src: '/assets/custom1.webp',
             alt: 'Custom Orders',
             title: 'Custom Orders',
           },

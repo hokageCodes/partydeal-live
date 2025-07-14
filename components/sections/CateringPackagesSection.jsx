@@ -9,7 +9,7 @@ const packages = [
     guests: '20-50 Guests',
     price: '₦150,000 — ₦350,000',
     bestFor: 'Intimate family gatherings, small birthday parties, naming ceremonies',
-    image: '/assets/img/office.jpg',
+    image: '/assets/img/office.webp',
     includes: [
       'Choice of 2 rice dishes',
       '1 soup with swallow option',
@@ -27,7 +27,7 @@ const packages = [
     guests: '50-100 Guests',
     price: '₦400,000 — ₦800,000',
     bestFor: 'Medium weddings, corporate events, significant birthdays',
-    image: '/assets/wed.jpg',
+    image: '/assets/wed.webp',
     includes: [
       'Choice of 3 rice dishes',
       '2 soups with swallow options',
@@ -45,7 +45,7 @@ const packages = [
     guests: '100-300+ Guests',
     price: '₦1,000,000+',
     bestFor: 'Grand weddings, large corporate events, major celebrations',
-    image: '/assets/grande.jpeg',
+    image: '/assets/grande.webp',
     includes: [
       'Full menu access',
       'Multiple soup and swallow options',

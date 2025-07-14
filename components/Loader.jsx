@@ -26,7 +26,7 @@ export default function Loader() {
     <div className="fixed inset-0 z-[9999] bg-white flex items-center justify-center animate-fadeOut">
       <div className="flex flex-col items-center justify-center">
         <Image
-          src="/assets/img/Logo-1.png"
+          src="/assets/img/Logo-1.webp"
           alt="Site logo"
           width={220}
           height={220}

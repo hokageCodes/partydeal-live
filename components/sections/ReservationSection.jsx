@@ -8,7 +8,7 @@ const ReservationParallaxSection = () => {
       {/* Background Image (Responsive & Always Visible) */}
       <div
         className="absolute inset-0 bg-center bg-cover bg-no-repeat z-0"
-        style={{ backgroundImage: "url('/assets/img/buffet.jpg')" }}
+        style={{ backgroundImage: "url('/assets/img/buffet.webp')" }}
       ></div>
 
       {/* Dark Overlay */}
