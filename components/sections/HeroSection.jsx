@@ -2,16 +2,22 @@
 
 import Link from "next/link";
 import Navbar from "../Navbar";
+import Image from "next/image";
 
 // Hero Component
 function Hero() {
   return (
     <section className="relative w-full h-screen flex items-center justify-center px-2 sm:px-12 md:px-24 lg:px-48 text-white overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/assets/hero-bg.jpg')" }}
-      />
+        <Image
+          src="/assets/hero-bg.jpg"
+          alt="Hero background"
+          fill
+          priority
+          quality={70}
+          className="absolute inset-0 object-cover z-0"
+        />
+
 
       {/* Dark Overlay with Gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/60 to-black/70" />

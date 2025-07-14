@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
@@ -22,7 +22,7 @@ function Navbar() {
     { name: 'Catering', href: '/catering' },
     { name: 'Order', href: '/order' },
     { name: 'Menu', href: '/menu' },
-    { name: 'Contact', href: '/contact' }
+    { name: 'Contact', href: '/contact' },
   ];
 
   const handleMobileMenuClose = () => {
@@ -39,22 +39,21 @@ function Navbar() {
             : 'bg-transparent'
         }`}
       >
-        <div className="flex justify-between items-center w-full">
-          {/* Logo - Far left on all devices */}
+        <div className="flex items-center justify-between w-full">
+          {/* Logo */}
           <div className="relative w-[120px] h-[40px] shrink-0 z-50">
-  <Link href="/">
-    <Image
-      src="/assets/logo.png"
-      alt="Party Deal Catering Logo"
-      fill
-      sizes="(max-width: 768px) 100px, 120px"
-      className="object-contain hover:scale-105 transition-transform duration-300"
-    />
-  </Link>
-</div>
+            <Link href="/">
+              <Image
+                src="/assets/logo.png"
+                alt="Party Deal Catering Logo"
+                fill
+                sizes="(max-width: 768px) 100px, 120px"
+                className="object-contain hover:scale-105 transition-transform duration-300"
+              />
+            </Link>
+          </div>
 
-
-          {/* Desktop Nav Links */}
+          {/* Desktop Navigation */}
           <ul className="hidden lg:flex gap-8 items-center text-white">
             {navItems.map((item) => (
               <li key={item.name}>
@@ -68,25 +67,25 @@ function Navbar() {
             ))}
           </ul>
 
-          {/* Mobile Menu Toggle - Far right on mobile */}
-          <button
-            className="lg:hidden text-white ml-36 z-50 p-2 hover:bg-white/10 rounded-lg transition-colors"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
-
-          {/* Desktop CTA */}
+          {/* CTA Button */}
           <Link href="/order">
             <button className="hidden sm:block px-6 py-3 rounded-lg bg-yellow-400 hover:bg-yellow-500 text-black font-medium text-[14px] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
               Book Now
             </button>
           </Link>
+
+          {/* Mobile Hamburger Toggle */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+            className="lg:hidden text-white ml-auto z-50 p-2 hover:bg-white/10 rounded-lg transition-colors"
+          >
+            {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
         </div>
       </div>
 
-      {/* Mobile Menu Overlay - Fixed background bleed */}
+      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="lg:hidden fixed inset-0 bg-black/95 backdrop-blur-md z-40 pt-32">
           <div className="bg-black/80 backdrop-blur-xl border border-white/20 rounded-2xl mx-4 p-8 shadow-2xl">
@@ -105,7 +104,7 @@ function Navbar() {
             </ul>
             <div className="flex justify-center">
               <Link href="/order">
-                <button 
+                <button
                   className="px-8 py-4 rounded-lg bg-yellow-400 hover:bg-yellow-500 text-black font-medium text-[16px] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                   onClick={handleMobileMenuClose}
                 >

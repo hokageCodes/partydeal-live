@@ -101,7 +101,7 @@ export default function CateringMenuComponent() {
       ? menuItems
       : menuItems.filter((item) => item.category === activeFilter);
 
-      return (
+      return ( 
         <div className="w-full bg-white px-4 py-12 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             {/* Filter Buttons */}

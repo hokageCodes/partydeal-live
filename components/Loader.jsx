@@ -1,61 +1,53 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export default function Loader() {
-  const [visible, setVisible] = useState(true);
-  const [percent, setPercent] = useState(0);
+  const [visible, setVisible] = useState(false); // Initially hidden
 
-  // Track first mount only
   useEffect(() => {
-    // Prevent loader from showing again on route changes
-    if (sessionStorage.getItem('loaderShown')) {
-      setVisible(false);
-      return;
-    }
+    // Only show loader for first-time visit
+    if (sessionStorage.getItem('loaderShown')) return;
 
     sessionStorage.setItem('loaderShown', 'true');
-
     setVisible(true);
-    setPercent(0);
-
-    let current = 0;
-    const interval = setInterval(() => {
-      current += Math.floor(Math.random() * 4) + 2; // 2–5%
-      if (current >= 100) {
-        current = 100;
-        clearInterval(interval);
-      }
-      setPercent(current);
-    }, 70); // ~2 seconds total
 
     const timeout = setTimeout(() => {
       setVisible(false);
-    }, 2000);
+    }, 1200); // Show briefly for branding
 
-    return () => {
-      clearInterval(interval);
-      clearTimeout(timeout);
-    };
+    return () => clearTimeout(timeout);
   }, []);
 
   if (!visible) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] bg-white flex items-center justify-center">
-      {/* Centered Logo */}
+    <div className="fixed inset-0 z-[9999] bg-white flex items-center justify-center animate-fadeOut">
       <div className="flex flex-col items-center justify-center">
-        <img
-          src="/assets/img/Logo-1.png" // ← Replace with your actual logo path (e.g., /logo.png or /images/logo.svg)
+        <Image
+          src="/assets/img/Logo-1.png"
           alt="Site logo"
-          className="w-72 h-72 animate-pulse object-contain"
+          width={220}
+          height={220}
+          priority
+          className="animate-pulse object-contain"
         />
       </div>
 
-      {/* Bottom-right percentage */}
-      <p className="fixed bottom-6 right-6 text-3xl text-[#3D1F1F] font-semibold font-[Coolvetica,sans-serif]">
-        {percent}%
-      </p>
+      {/* Fade-out animation */}
+      <style jsx>{`
+        .animate-fadeOut {
+          animation: fadeOut 0.8s ease-in 0.5s forwards;
+        }
+
+        @keyframes fadeOut {
+          to {
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+      `}</style>
     </div>
   );
 }
