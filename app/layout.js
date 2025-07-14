@@ -1,7 +1,7 @@
 import './globals.css';
 import Footer from '@/components/Footer';
 import ReservationParallaxSection from '@/components/sections/ReservationSection';
-import Loader from '@/components/Loader'; // ✅ Add this
+// import Loader from '@/components/Loader'; 
 import Head from 'next/head';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/next"
@@ -115,7 +115,7 @@ export default function RootLayout({ children }) {
 
         </Head> 
       <body>
-        <Loader /> {/* ✅ Add before everything else */}
+        {/* <Loader /> */}
         {children}
         <ReservationParallaxSection />
         <Footer />
