@@ -52,7 +52,7 @@ export default function EnhancedCateringOrderForm() {
       id: 1,
       name: 'Jollof Rice',
       category: 'Rice',
-      image: '/assets/selection1.webp',
+      image: '/assets/selection1.png',
       description: 'Traditional Nigerian jollof rice with spices and vegetables',
       price: 2500,
       popular: true,
@@ -62,7 +62,7 @@ export default function EnhancedCateringOrderForm() {
       id: 2,
       name: 'Fried Rice',
       category: 'Rice',
-      image: '/assets/selection1.webp',
+      image: '/assets/selection1.png',
       description: 'Colorful fried rice with mixed vegetables and protein',
       price: 2800,
       popular: false,
@@ -72,7 +72,7 @@ export default function EnhancedCateringOrderForm() {
       id: 3,
       name: 'Prime Truffle Ribeye',
       category: 'Proteins',
-      image: '/assets/selection1.webp',
+      image: '/assets/selection1.png',
       description: 'Premium ribeye steak with truffle seasoning',
       price: 8500,
       popular: true,
@@ -82,7 +82,7 @@ export default function EnhancedCateringOrderForm() {
       id: 4,
       name: 'Chicken Peppersoup',
       category: 'Soups',
-      image: '/assets/selection1.webp',
+      image: '/assets/selection1.png',
       description: 'Spicy chicken pepper soup with traditional spices',
       price: 3200,
       popular: false,
@@ -132,7 +132,7 @@ export default function EnhancedCateringOrderForm() {
       id: 9,
       name: 'Eba',
       category: 'Swallows',
-      image: '/assets/selection1.webp',
+      image: '/assets/selection1.png',
       description: 'Traditional cassava flour meal',
       price: 1200,
       popular: false,
@@ -152,7 +152,7 @@ export default function EnhancedCateringOrderForm() {
       id: 11,
       name: 'Fresh Juice',
       category: 'Drinks',
-      image: '/assets/selection1.webp',
+      image: '/assets/selection1.png',
       description: 'Fresh tropical fruit juice blend',
       price: 800,
       popular: false,
@@ -162,7 +162,7 @@ export default function EnhancedCateringOrderForm() {
       id: 12,
       name: 'Soft Drinks',
       category: 'Drinks',
-      image: '/assets/selection1.webp',
+      image: '/assets/selection1.png',
       description: 'Assorted soft drinks and beverages',
       price: 500,
       popular: false,
@@ -577,7 +577,7 @@ Looking forward to your response!`;
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-sm font-semibold text-amber-800 mb-2">Package Selection *</label>
+                      <label className="block text-sm font-semibold text-amber-800 mb-2">Menu Selection *</label>
                       <select
                         name="menuSelection"
                         value={formData.menuSelection}
@@ -587,10 +587,10 @@ Looking forward to your response!`;
                         }`}
                         required
                       >
-                        <option value="">Choose your package</option>
-                        <option value="bronze">Bronze Package</option>
-                        <option value="silver">Silver Package</option>
-                        <option value="gold">Gold Package</option>
+                        <option value="">Choose your menu</option>
+                        <option value="breakfast">🍳 Breakfast Package</option>
+                        <option value="lunch">🥗 Lunch Package</option>
+                        <option value="dinner">🍽️ Dinner Package</option>
                         <option value="snacks">🥤 Snacks & Beverages</option>
                         <option value="custom">👨‍🍳 Custom Menu</option>
                       </select>
@@ -633,7 +633,7 @@ Looking forward to your response!`;
                       {/* Category Filter */}
                       <div className="flex flex-wrap gap-2 mb-4">
                         {menuCategories.map(category => (
-                          <button
+                          <button aria-label='category'
                             key={category}
                             onClick={() => setSelectedCategory(category)}
                             className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
@@ -699,7 +699,7 @@ Looking forward to your response!`;
           {/* Step Navigation */}
           <div className="flex justify-between gap-4">
             {step > 1 && (
-              <button
+              <button aria-label='back'
                 onClick={handleBack}
                 className="flex-1 bg-white border-2 border-amber-300 text-amber-800 font-semibold py-4 px-6 rounded-xl hover:shadow-md hover:bg-amber-50 transition-all duration-200 flex items-center justify-center gap-2"
               >
@@ -707,7 +707,7 @@ Looking forward to your response!`;
               </button>
             )}
             {step < 3 ? (
-              <button
+              <button aria-label='next'
                 onClick={handleNext}
                 className="flex-1 bg-amber-400 text-amber-900 font-semibold py-4 px-6 rounded-xl hover:shadow-md hover:bg-amber-500 transition-all duration-200 flex items-center justify-center gap-2"
               >
@@ -715,6 +715,7 @@ Looking forward to your response!`;
               </button>
             ) : (
               <button
+                aria-label='submit'
                 onClick={handleSubmit}
                 className="flex-1 bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-6 rounded-xl hover:shadow-md transition-all duration-200 flex items-center justify-center gap-2"
               >

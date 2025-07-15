@@ -9,6 +9,7 @@ export default function Modal({ isOpen, onClose, children }) {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm px-4">
       <div className="relative bg-white rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto shadow-xl">
         <button
+          aria-label='close'
           onClick={onClose}
           className="absolute top-4 right-4 text-gray-600 hover:text-gray-900"
         >

@@ -42,7 +42,7 @@ function Navbar() {
         <div className="flex items-center justify-between w-full">
           {/* Logo */}
           <div className="relative w-[120px] h-[40px] shrink-0 z-50">
-            <Link href="/">
+            <Link href="/" aria-label="Party Deal Catering - Go to homepage">
               <Image
                 src="/assets/logo.webp"
                 alt="Party Deal Catering Logo"
@@ -68,7 +68,7 @@ function Navbar() {
           </ul>
 
           {/* CTA Button */}
-          <Link href="/order">
+          <Link href="/order" aria-label="Book catering service now">
             <button className="hidden sm:block px-6 py-3 rounded-lg bg-yellow-400 hover:bg-yellow-500 text-black font-medium text-[14px] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
               Book Now
             </button>
@@ -103,7 +103,7 @@ function Navbar() {
               ))}
             </ul>
             <div className="flex justify-center">
-              <Link href="/order">
+              <Link href="/order" aria-label="Book catering service now">
                 <button
                   className="px-8 py-4 rounded-lg bg-yellow-400 hover:bg-yellow-500 text-black font-medium text-[16px] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                   onClick={handleMobileMenuClose}

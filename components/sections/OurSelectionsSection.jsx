@@ -5,9 +5,9 @@ export default function OurSelectionsSection() {
   return (
     <section className="w-full py-8 md:py-24 px-4 bg-[#FEFBF6] flex flex-col items-center text-center">
       {/* Section Heading */}
-      <h5 className="text-sm font-medium tracking-widest uppercase text-black mb-4">
+      <span className="text-sm font-medium tracking-widest uppercase text-black mb-4">
         Our Menu
-      </h5>
+      </span>
 
       {/* Section Title */}
       <h2

@@ -13,7 +13,7 @@ export default function Home() {
       {/* Background Image Layer */}
       <div
         className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/assets/hero-bg.jpg')" }}
+        style={{ backgroundImage: "url('/assets/hero-bg.webp')" }}
       />
       <Navbar />
       <Hero />

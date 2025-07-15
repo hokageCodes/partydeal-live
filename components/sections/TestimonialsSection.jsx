@@ -50,9 +50,9 @@ const TestimonialsSection = () => {
   return (
     <section className="bg-partyYellow py-20 w-full flex items-center justify-center">
       <div className="w-full max-w-7xl px-4 text-center">
-        <h5 className="text-sm font-medium tracking-widest uppercase text-black mb-4">
+        <span className="text-sm font-medium tracking-widest uppercase text-black mb-4">
           Testimonials
-        </h5>
+        </span>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-black mb-12">
           Client Reviews
         </h2>
@@ -123,7 +123,7 @@ const TestimonialsSection = () => {
         {/* Indicators */}
         <div className="flex justify-center gap-3 mt-10">
           {testimonials.map((_, index) => (
-            <button
+            <button aria-label='indicator'
               key={index}
               onClick={() => goToTestimonial(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${

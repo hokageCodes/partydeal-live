@@ -108,6 +108,7 @@ export default function CateringMenuComponent() {
             <div className="flex flex-wrap justify-center gap-2 mb-12">
               {menuCategories.map((category) => (
                 <button
+                aria-label='category'
                   key={category}
                   onClick={() => setActiveFilter(category)}
                   className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
@@ -155,7 +156,7 @@ export default function CateringMenuComponent() {
       
             {/* CTA */}
             <div className="text-center mt-20">
-              <button className="bg-amber-600 hover:bg-amber-700 text-white font-semibold py-4 px-8 rounded-xl text-lg transition-colors duration-300">
+              <button aria-label='Plac Order' className="bg-amber-600 hover:bg-amber-700 text-white font-semibold py-4 px-8 rounded-xl text-lg transition-colors duration-300">
                 Place Your Order
               </button>
             </div>

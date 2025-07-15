@@ -40,7 +40,7 @@ const FAQSection = () => {
         <div className="divide-y divide-gray-200">
           {faqs.map((faq, index) => (
             <div key={index} className="py-6">
-              <button
+              <button aria-label='toggle'
                 onClick={() => toggleFAQ(index)}
                 className="w-full text-left flex items-center justify-between group"
               >
@@ -77,7 +77,7 @@ const FAQSection = () => {
           <p className="text-gray-600 mb-6">
             Still have questions? We'd love to help!
           </p>
-          <button className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-medium px-8 py-3 rounded-lg transition-colors duration-200">
+          <button aria-label='contact us' className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-medium px-8 py-3 rounded-lg transition-colors duration-200">
             <a href="/contact">Contact Us</a>
           </button>
         </div>

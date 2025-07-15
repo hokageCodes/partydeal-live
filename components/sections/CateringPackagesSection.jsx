@@ -102,7 +102,7 @@ export default function CateringPackagesSection() {
                     <span className="font-medium">Sample Menu:</span> {pkg.sampleMenu}
                   </p>
                   <div>
-                    <button className="bg-partyYellow hover:bg-orange-600 text-black px-6 py-3 rounded-lg mt-4 font-medium transition-all">
+                    <button aria-label='select' className="bg-partyYellow hover:bg-orange-600 text-black px-6 py-3 rounded-lg mt-4 font-medium transition-all">
                       Select {pkg.name}
                     </button>
                   </div>
