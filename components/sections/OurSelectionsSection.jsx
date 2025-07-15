@@ -24,7 +24,7 @@ export default function OurSelectionsSection() {
         {[
           { src: '/assets/img/5.webp', caption: 'Party Jollof Rice' },
           { src: '/assets/img/small.webp', caption: 'Assorted Small Chops' },
-          { src: '/assets/selection3.jpg', caption: 'Assorted Traditional Food' },
+          { src: '/assets/okele.jpg', caption: 'Assorted Traditional Food' },
           { src: '/assets/img/zobo.webp', caption: 'Asake Zobo' },
         ].map(({ src, caption }, i) => (
           <figure
